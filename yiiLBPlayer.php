@@ -86,7 +86,7 @@ class yiiLBPlayer extends CWidget
 	//access LBPlayer 
 	protected function allScripts()
 	{
-		$assets=dirname(__FILE__).'/assets';
+		$assets=dirname(__FILE__).DIRECTORY_SEPARATOR.'assets';
 		$baseUrl=Yii::app()->assetManager->publish($assets);
 		if(is_dir($assets))
 		{
