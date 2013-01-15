@@ -12,7 +12,7 @@ USAGE
 1.Audio:
 
 <?php
-	$this->widget('ext.yiiLBPlayer.yiiLBPlayer', array(
+	$this->widget('ext.yiilbplayer.yiiLBPlayer', array(
 		'type' => 'audio',
 		'file' => Yii::app()->request->baseUrl.'/mp3/audio_1.mp3',
 		'defaulLanguage' => 'en',
@@ -26,7 +26,7 @@ USAGE
 2.Video:
 
 <?php
-	$this->widget('ext.yiiLBPlayer.yiiLBPlayer', array(
+	$this->widget('ext.yiilbplayer.yiiLBPlayer', array(
 		'type' => 'video',
 		'file' => Yii::app()->request->baseUrl.'/video/test.mp4',
 		'defaulLanguage' => 'en',
