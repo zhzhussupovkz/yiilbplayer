@@ -43,6 +43,9 @@ class yiiLBPlayer extends CWidget
 	//video height
 	public $videoHeight = '240px';
 
+	//theme for player
+	public $theme = 'default';
+
 	//run widget
 	public function run()
 	{
@@ -93,7 +96,7 @@ class yiiLBPlayer extends CWidget
 			Yii::app()->clientScript->registerScriptFile($baseUrl.'/leanbackPlayer.pack.js');
 			Yii::app()->clientScript->registerScriptFile($baseUrl.'/leanbackPlayer.en.js');
 			Yii::app()->clientScript->registerScriptFile($baseUrl.'/leanbackPlayer.ru.js');
-			Yii::app()->clientScript->registerCssFile($baseUrl.'/leanbackPlayer.default.css');
+			Yii::app()->clientScript->registerCssFile($baseUrl.'/themes/leanbackPlayer.'.$this->theme.'.css');
 		}
 		else
 		{
